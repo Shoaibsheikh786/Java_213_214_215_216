@@ -3,10 +3,10 @@ package demoPackage1;
 public class Test1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub		
+	    //simple code Test
 		
-		//simple code Test
-		System.out.print("Welcome To Automation");
+		System.out.print("Welcome To Automation");	
 	}
 
 }

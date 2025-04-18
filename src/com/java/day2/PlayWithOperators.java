@@ -24,9 +24,11 @@ public class PlayWithOperators {
 		int c=21;
 		
         int z=a--;   // z-> 20, a->19 
-        a++;         // a-> 20
+        ++a; // a-> 20
         z=a--;       // z-> 20, 19
-        System.out.println("Value of z"+z);
+        z--;
+        z=z-23;
+        System.out.println("Value of z "+z);  // -4
 	}
 
 }

@@ -1,0 +1,7 @@
+Wap to print all the elements in 2D array
+Wap to find reverse an array
+wap to add two arrays
+Wap to reverse a number 
+wap to swap two numbers
+Wap to swap two numbers without using third variable
+Wap to use show use of for each loop 

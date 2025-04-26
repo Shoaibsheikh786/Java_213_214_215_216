@@ -1,0 +1,9 @@
+Create a class Student
+-> members
+   id , rollno , fChar 
+   create static methods to print { "Student"}
+   create non-static to print the id 
+   create non-static to print the roll_no;
+   create non-static method -> to print all the deails
+   -> id, rollno, fChar
+   

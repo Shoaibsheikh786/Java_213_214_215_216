@@ -1,4 +1,4 @@
-package com.java.day7.OOPs_day2;
+package com.java.day7_OOPs_day2;
 
 public class Class1 {
 

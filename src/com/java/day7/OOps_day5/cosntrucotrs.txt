@@ -1,0 +1,19 @@
+What is constructor
+:-> constructor is  a SPECAIL method
+   --> it does not have return Type[int char, float , void]
+   --> it should be same as className 
+   --> it is automatically invoked/called , when we create an object
+   --> if we dont define a constructor in a class , then be default jvm will define a construcotr for us
+  -> method, returType methodnae(){..}
+
+
+
+What are the different type of constructor
+ default constructor()
+ parameteric constructor
+
+Why we need constructor
+we use construcotrs to intilize the object
+
+
+// we have default constructor -> 

@@ -14,12 +14,10 @@ public class Box {
          //Type casting
          
        //  System.out.println(0x10+10+10);
-         int f=05;
-         System.out.println(f);
+      //   int f=058; // octal number system, -> [0 - 7 ]
+  //       System.out.println(f);
+
          
-         
-     
-    		 
 	}
 
 }

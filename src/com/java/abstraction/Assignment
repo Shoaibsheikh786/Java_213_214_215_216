@@ -1,0 +1,8 @@
+Coding Activity 
+Task: Create a system for different payment methods.
+1.	Create an abstract class Payment with:
+	An abstract method processPayment().
+	A concrete method paymentDetails().
+2.	Create subclasses CreditCardPayment and UPIPayment that
+ implement the abstract method.
+

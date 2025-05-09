@@ -20,8 +20,8 @@ public class UnderstandAbstractClass extends RBI1 {
 	}
 	public static void main(String[] args) {
 		UnderstandAbstractClass o1=new UnderstandAbstractClass();
+		o1.sub();  //we need to create an object class, 
+		o1.add();
 	}
-
-	
 
 }

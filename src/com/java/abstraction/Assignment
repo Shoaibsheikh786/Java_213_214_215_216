@@ -5,4 +5,142 @@ Task: Create a system for different payment methods.
 	A concrete method paymentDetails().
 2.	Create subclasses CreditCardPayment and UPIPayment that
  implement the abstract method.
+___________________________________________________________________________
+Abstraction:
+hiding the complex implemintation details from the user
+
+interface:
+ we can't create an object of an interface 
+ we can't have constructor of an interface
+ interface contains abstract methods : -> without code
+ if we create a variable in interface , it will be final 
+ the access specifier of methods will be public 
+ 100% abstraction 
+__________________________________________________________
+
+interface to inteface  : extends
+interace to class      : implements
+class to class         : extends 
+___________________________________________________________
+
+
+abstract class RBI
+{
+  //abstract methods():      methods without code
+ // non-abstract methods:    methods code 
+ // private public methods 
+ // varaiables, different access Specifiers
+ // we can create constructor of an abstract class
+ 
+ //0 to 100 % abstraction 
+ // 0 abstract , 10 non -abstraction , 0 
+
+// we cant create an object of abstract class well  
+
+
+// we we create an object , contructor in invoked 
+
+//can we create an object of an abstract class : NO
+//can we create construcotr of abstract class  : Yes , we can create object
+of a child class then parents constructor will invoked 
+_______________________________________________________________________________
+
+inheritance
+class and object with methods 
+encpsulation 
+constructor chaining: if we inherit a class , and create an object of child class 
+which constructor will be class, how it will work
+________________________________________________________________
+ 
+
+1. Introduction to Abstraction 
+•	Definition:
+Abstraction is the process of hiding implementation details and showing only the essential features of an object.
+•	Real-World Examples:
+o	A car: Users know how to drive it (steering, accelerator, brake) without knowing the internal mechanics.
+o	ATM: Users interact with a simple interface without understanding the machine's internal workings.
+•	Why Abstraction?
+o	Simplifies code readability and maintenance.
+o	Promotes focus on what an object does, rather than how it does it.
+o	Reduces complexity in large applications.
+________________________________________
+2. Abstraction in Java 
+•	How is Abstraction Achieved in Java?
+1.	Abstract Classes:
+	A class that cannot be instantiated.
+	Contains both abstract methods (without implementation) and concrete methods (with implementation).
+2.	Interfaces:
+	Specifies a contract for a class to implement.
+	Supports 100% abstraction (prior to Java 8) and allows default/static methods (from Java 8 onward).
+________________________________________
+3. Example: Abstract Class 
+Code Example:
+java
+
+abstract class Vehicle {
+    abstract void startEngine(); // Abstract method
+    void stopEngine() {          // Concrete method
+        System.out.println("Engine stopped.");
+    }
+}
+
+class Car extends Vehicle {
+    @Override
+    void startEngine() {
+        System.out.println("Car engine started.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle myCar = new Car();
+        myCar.startEngine();
+        myCar.stopEngine();
+    }
+}
+•	Explanation:
+o	Vehicle class is abstract, containing one abstract method startEngine() and one concrete method stopEngine().
+o	The Car class extends Vehicle and provides implementation for startEngine().
+________________________________________
+4. Example: Interface 
+Code Example:
+java
+
+interface Animal {
+    void sound(); // Abstract method
+}
+
+class Dog implements Animal {
+    @Override
+    public void sound() {
+        System.out.println("Dog barks.");
+    }
+}
+
+class Cat implements Animal {
+    @Override
+    public void sound() {
+        System.out.println("Cat meows.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal dog = new Dog();
+        Animal cat = new Cat();
+        dog.sound();
+        cat.sound();
+    }
+}
+•	Explanation:
+o	Animal is an interface with the method sound().
+o	Dog and Cat classes implement the Animal interface and provide specific implementations for sound().
+________________________________________
+5. Key Differences Between Abstract Class and Interface 
+Feature	Abstract Class	Interface
+Abstraction Level	Partial abstraction	Full abstraction (prior to Java 8)
+Methods	Both abstract and concrete	Only abstract (default/static from Java 8)
+Inheritance	Single inheritance	Multiple inheritance allowed
+Performance	Slightly faster	Slower due to additional overhead
+________________________________________
 
